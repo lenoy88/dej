@@ -28,12 +28,10 @@
       text-decoration: none;
     }
 
-    /* NAVIGATION */
-
     nav {
       width: 100%;
       min-height: 70px;
-      background: rgba(3, 12, 32, 0.95);
+      background: rgba(3, 12, 32, 0.96);
       border-bottom: 3px solid #d91f2d;
       display: flex;
       align-items: center;
@@ -48,7 +46,6 @@
       font-size: 26px;
       font-weight: 900;
       color: white;
-      text-transform: uppercase;
     }
 
     .logo span {
@@ -63,14 +60,11 @@
     .nav-links a {
       color: white;
       font-weight: bold;
-      transition: 0.3s;
     }
 
     .nav-links a:hover {
       color: #62c7ff;
     }
-
-    /* HERO */
 
     .hero {
       min-height: 90vh;
@@ -78,8 +72,8 @@
       align-items: center;
       justify-content: center;
       padding: 70px 7%;
-      overflow: hidden;
       position: relative;
+      overflow: hidden;
     }
 
     .hero::before {
@@ -103,7 +97,7 @@
       gap: 50px;
     }
 
-    .hero-text .small-title {
+    .small-title {
       color: #70d5ff;
       text-transform: uppercase;
       font-weight: bold;
@@ -115,8 +109,6 @@
       font-size: clamp(52px, 8vw, 100px);
       line-height: 0.9;
       margin-bottom: 20px;
-      text-transform: uppercase;
-      text-shadow: 0 5px 15px rgba(0,0,0,.4);
     }
 
     .gentle {
@@ -124,14 +116,12 @@
       color: white;
       font-family: Georgia, serif;
       font-style: italic;
-      text-transform: none;
     }
 
     .touch {
       color: #e22432;
       font-family: Georgia, serif;
       font-style: italic;
-      text-transform: none;
     }
 
     .cleaning {
@@ -140,6 +130,7 @@
       font-size: 0.55em;
       letter-spacing: 4px;
       margin-top: 10px;
+      text-transform: uppercase;
     }
 
     .hero-text h2 {
@@ -172,12 +163,11 @@
     .btn-red {
       background: #dc2030;
       color: white;
-      box-shadow: 0 8px 20px rgba(220,32,48,.3);
     }
 
     .btn-red:hover {
-      transform: translateY(-3px);
       background: #f22d3c;
+      transform: translateY(-3px);
     }
 
     .btn-blue {
@@ -198,14 +188,14 @@
     .hero-photo img {
       width: 100%;
       max-width: 500px;
-      border-radius: 22px;
+      max-height: 650px;
+      object-fit: cover;
+      border-radius: 24px;
       box-shadow:
         0 0 0 6px white,
         0 0 0 11px #d62030,
         0 30px 70px rgba(0,0,0,.55);
     }
-
-    /* TRUST */
 
     .trust {
       background: white;
@@ -224,11 +214,6 @@
     .trust-box {
       text-align: center;
       padding: 20px;
-      border-right: 1px solid #d5dce7;
-    }
-
-    .trust-box:last-child {
-      border-right: none;
     }
 
     .trust-icon {
@@ -247,8 +232,6 @@
       color: #5c6572;
     }
 
-    /* GENERAL */
-
     .section {
       padding: 90px 7%;
     }
@@ -263,14 +246,14 @@
       margin-bottom: 45px;
     }
 
-    .section-title span {
-      color: #e32837;
-    }
-
     .section-title h2 {
       font-size: clamp(36px, 6vw, 58px);
       text-transform: uppercase;
       margin-bottom: 10px;
+    }
+
+    .section-title h2 span {
+      color: #e32837;
     }
 
     .section-title p {
@@ -279,8 +262,6 @@
       color: #bcd0e8;
       font-size: 17px;
     }
-
-    /* SERVICES */
 
     .services-grid {
       display: grid;
@@ -324,11 +305,46 @@
       color: #cbd9e9;
     }
 
-    /* SPECIAL SECTION */
+    .flyer-section {
+      background: white;
+      color: #071b3b;
+    }
+
+    .flyer-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 50px;
+      align-items: center;
+    }
+
+    .flyer-image img {
+      width: 100%;
+      max-width: 520px;
+      display: block;
+      margin: auto;
+      border-radius: 18px;
+      box-shadow: 0 25px 55px rgba(0,0,0,.2);
+    }
+
+    .flyer-text h2 {
+      font-size: 48px;
+      color: #082759;
+      margin-bottom: 15px;
+    }
+
+    .flyer-text h2 span {
+      color: #d91f2d;
+    }
+
+    .flyer-text p {
+      color: #59687c;
+      margin-bottom: 18px;
+      font-size: 17px;
+    }
 
     .special {
       background:
-        linear-gradient(rgba(5,20,47,.92), rgba(5,20,47,.92)),
+        linear-gradient(rgba(5,20,47,.93), rgba(5,20,47,.93)),
         url('gentle-touch.jpg') center/cover;
     }
 
@@ -383,22 +399,10 @@
       text-transform: uppercase;
     }
 
-    .adult-box p {
-      font-size: 17px;
-      margin-bottom: 15px;
-    }
-
-    .adult-box small {
-      opacity: .9;
-    }
-
-    /* WELDING */
-
     .welding {
       padding: 65px 7%;
       text-align: center;
-      background:
-        linear-gradient(90deg, #020813, #071c39);
+      background: linear-gradient(90deg, #020813, #071c39);
       border-top: 4px solid #d91f2d;
       border-bottom: 4px solid #d91f2d;
     }
@@ -406,7 +410,6 @@
     .welding h2 {
       font-size: clamp(38px, 7vw, 70px);
       text-transform: uppercase;
-      color: white;
     }
 
     .welding h2 span {
@@ -418,41 +421,6 @@
       font-size: 20px;
       margin-top: 10px;
     }
-
-    /* ABOUT */
-
-    .about-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 50px;
-      align-items: center;
-    }
-
-    .about-photo img {
-      width: 100%;
-      max-height: 620px;
-      object-fit: contain;
-      border-radius: 20px;
-      background: white;
-      padding: 8px;
-    }
-
-    .about-text h2 {
-      font-size: 48px;
-      margin-bottom: 18px;
-    }
-
-    .about-text h2 span {
-      color: #e22534;
-    }
-
-    .about-text p {
-      color: #c5d7e8;
-      margin-bottom: 18px;
-      font-size: 17px;
-    }
-
-    /* CONTACT */
 
     .contact {
       background: #f4f7fb;
@@ -490,8 +458,6 @@
       margin-bottom: 25px;
     }
 
-    /* FOOTER */
-
     footer {
       padding: 30px 7%;
       background: #020712;
@@ -503,25 +469,14 @@
       color: white;
     }
 
-    /* MOBILE */
-
     @media (max-width: 850px) {
-
-      nav {
-        padding: 12px 5%;
-      }
-
       .nav-links {
         display: none;
       }
 
-      .hero {
-        padding: 55px 6%;
-      }
-
       .hero-container,
-      .special-box,
-      .about-grid {
+      .flyer-grid,
+      .special-box {
         grid-template-columns: 1fr;
       }
 
@@ -529,25 +484,21 @@
         text-align: center;
       }
 
+      .hero-buttons {
+        justify-content: center;
+      }
+
       .hero-text p {
         margin-left: auto;
         margin-right: auto;
       }
 
-      .hero-buttons {
-        justify-content: center;
-      }
-
       .hero-photo {
-        margin-top: 25px;
+        margin-top: 20px;
       }
 
       .trust-container {
         grid-template-columns: repeat(2, 1fr);
-      }
-
-      .trust-box {
-        border-right: none;
       }
 
       .services-grid {
@@ -558,18 +509,12 @@
         padding: 25px;
       }
 
-      .special h2,
-      .about-text h2 {
-        font-size: 38px;
-      }
-
-      .contact-box {
-        padding: 35px 20px;
+      .flyer-text {
+        text-align: center;
       }
     }
 
     @media (max-width: 500px) {
-
       .trust-container {
         grid-template-columns: 1fr;
       }
@@ -586,13 +531,16 @@
         width: 100%;
         text-align: center;
       }
+
+      .contact-box {
+        padding: 35px 20px;
+      }
     }
   </style>
 </head>
 
 <body>
 
-  <!-- NAV -->
   <nav>
     <div class="logo">
       Gentle <span>Touch</span>
@@ -606,14 +554,10 @@
     </div>
   </nav>
 
-
-  <!-- HERO -->
   <section class="hero" id="home">
-
     <div class="hero-container">
 
       <div class="hero-text">
-
         <div class="small-title">
           ✦ Clean Spaces. Gentle Touch. ✦
         </div>
@@ -627,13 +571,11 @@
         <h2>Professional Cleaning With Care</h2>
 
         <p>
-          Reliable, detailed and respectful cleaning services for
-          homes, businesses, rentals, RVs, boats and more.
-          We focus on the little things so you don't have to.
+          Reliable, detailed and respectful cleaning services for homes,
+          businesses, rentals, RVs, boats and more.
         </p>
 
         <div class="hero-buttons">
-
           <a class="btn btn-red" href="tel:7579914251">
             📞 Call (757) 991-4251
           </a>
@@ -641,24 +583,17 @@
           <a class="btn btn-blue" href="#services">
             View Services
           </a>
-
         </div>
-
       </div>
 
-
       <div class="hero-photo">
-        <img src="gentle-touch.jpg" alt="Gentle Touch Cleaning">
+        <img src="dejah.jpg" alt="Gentle Touch Cleaning Owner">
       </div>
 
     </div>
-
   </section>
 
-
-  <!-- TRUST -->
   <section class="trust">
-
     <div class="trust-container">
 
       <div class="trust-box">
@@ -686,140 +621,135 @@
       </div>
 
     </div>
-
   </section>
 
-
-  <!-- SERVICES -->
   <section class="section" id="services">
-
     <div class="section-container">
 
       <div class="section-title">
         <h2>Our <span>Services</span></h2>
+
         <p>
           Flexible services designed for homes, businesses,
           travelers and everyday life.
         </p>
       </div>
 
-
       <div class="services-grid">
 
         <div class="service-card">
           <div class="service-icon">🏠</div>
           <h3>Basic Cleaning</h3>
-          <p>
-            Keep your home or living space fresh, clean and comfortable.
-          </p>
+          <p>Keep your space fresh, clean and comfortable.</p>
         </div>
-
 
         <div class="service-card">
           <div class="service-icon">🧼</div>
           <h3>Deep Cleaning</h3>
-          <p>
-            Detailed cleaning for areas that need extra care and attention.
-          </p>
+          <p>Detailed cleaning for spaces that need extra attention.</p>
         </div>
-
 
         <div class="service-card">
           <div class="service-icon">🏢</div>
           <h3>Businesses</h3>
-          <p>
-            Cleaning for offices, retail spaces and commercial properties.
-          </p>
+          <p>Offices, retail spaces and commercial cleaning.</p>
         </div>
-
 
         <div class="service-card">
           <div class="service-icon">🏘️</div>
           <h3>Airbnb Properties</h3>
-          <p>
-            Turnovers, restocking and guest-ready cleaning.
-          </p>
+          <p>Turnovers, restocking and guest-ready cleaning.</p>
         </div>
-
 
         <div class="service-card">
           <div class="service-icon">🚐</div>
           <h3>RVs</h3>
-          <p>
-            Interior and exterior RV cleaning services.
-          </p>
+          <p>Interior and exterior RV cleaning.</p>
         </div>
-
 
         <div class="service-card">
           <div class="service-icon">⛵</div>
           <h3>Marine Cleaning</h3>
-          <p>
-            Cleaning for boats, docks and marine spaces.
-          </p>
+          <p>Boats, docks and marine cleanup services.</p>
         </div>
-
 
         <div class="service-card">
           <div class="service-icon">🛒</div>
           <h3>Errand Runs</h3>
-          <p>
-            Help with groceries, pharmacy trips and other errands.
-          </p>
+          <p>Groceries, pharmacy and other errands.</p>
         </div>
-
 
         <div class="service-card">
           <div class="service-icon">👥</div>
           <h3>Companion Visits</h3>
-          <p>
-            Friendly, respectful visits and companionship.
-          </p>
+          <p>Friendly visits and companionship.</p>
         </div>
-
 
         <div class="service-card">
           <div class="service-icon">👕</div>
           <h3>Organizing Services</h3>
-          <p>
-            Declutter, organize and simplify your living space.
-          </p>
+          <p>Declutter, organize and simplify your space.</p>
         </div>
-
 
         <div class="service-card">
           <div class="service-icon">👷</div>
           <h3>Construction Clean-Up</h3>
-          <p>
-            Post-construction cleanup and staging services.
-          </p>
+          <p>Post-construction cleanup and staging services.</p>
         </div>
 
       </div>
-
     </div>
-
   </section>
 
+  <section class="section flyer-section" id="about">
+    <div class="section-container">
 
-  <!-- SPECIAL -->
+      <div class="flyer-grid">
+
+        <div class="flyer-image">
+          <img src="gentle-touch.jpg" alt="Gentle Touch Cleaning Flyer">
+        </div>
+
+        <div class="flyer-text">
+          <h2>
+            About <span>Gentle Touch</span>
+          </h2>
+
+          <p>
+            Gentle Touch Cleaning provides dependable,
+            detail-oriented service with a focus on professionalism,
+            flexibility and respect.
+          </p>
+
+          <p>
+            Whether you need help around the house, business cleaning,
+            rental turnovers, organizing or other services,
+            Gentle Touch Cleaning is ready to help.
+          </p>
+
+          <a class="btn btn-red" href="tel:7579914251">
+            Call Today
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
   <section class="section special">
-
     <div class="section-container">
 
       <div class="special-box">
 
         <div>
-
           <h2>
             Cleaning With A
             <span>Gentle Touch</span>
           </h2>
 
           <p>
-            We believe great service is about more than making
-            things look clean. It's about treating every customer
-            and every space with respect.
+            Great service is about more than making things look clean.
+            It's about treating every customer and every space with care.
           </p>
 
           <ul>
@@ -829,12 +759,9 @@
             <li>Affordable Rates</li>
             <li>Flexible Scheduling</li>
           </ul>
-
         </div>
 
-
         <div class="adult-box">
-
           <h3>Adult Cleaning Available</h3>
 
           <p>
@@ -843,21 +770,15 @@
           </p>
 
           <small>
-            Contact us directly for additional information.
+            Contact Gentle Touch Cleaning directly for information.
           </small>
-
         </div>
 
       </div>
-
     </div>
-
   </section>
 
-
-  <!-- WELDING -->
   <section class="welding">
-
     <h2>
       Welding Services
       <span>Coming Soon!</span>
@@ -866,61 +787,9 @@
     <p>
       More services are on the way.
     </p>
-
   </section>
 
-
-  <!-- ABOUT -->
-  <section class="section" id="about">
-
-    <div class="section-container">
-
-      <div class="about-grid">
-
-        <div class="about-photo">
-          <img src="gentle-touch.jpg" alt="Gentle Touch Cleaning Flyer">
-        </div>
-
-
-        <div class="about-text">
-
-          <h2>
-            About <span>Gentle Touch</span>
-          </h2>
-
-          <p>
-            Gentle Touch Cleaning provides dependable,
-            detail-oriented cleaning services with a focus on
-            professionalism, flexibility and respect.
-          </p>
-
-          <p>
-            Whether you need help around the house,
-            preparation for new guests, business cleaning,
-            organizing or another service, we're here to help.
-          </p>
-
-          <p>
-            Our goal is simple:
-            <strong>clean spaces with a gentle touch.</strong>
-          </p>
-
-          <a class="btn btn-red" href="tel:7579914251">
-            Call Today
-          </a>
-
-        </div>
-
-      </div>
-
-    </div>
-
-  </section>
-
-
-  <!-- CONTACT -->
   <section class="section contact" id="contact">
-
     <div class="section-container">
 
       <div class="contact-box">
@@ -928,8 +797,8 @@
         <h2>Ready For A Cleaner Space?</h2>
 
         <p>
-          Contact Gentle Touch Cleaning today to discuss
-          your cleaning needs and scheduling.
+          Contact Gentle Touch Cleaning today to discuss your
+          cleaning needs and scheduling.
         </p>
 
         <a class="phone-number" href="tel:7579914251">
@@ -941,15 +810,10 @@
         </a>
 
       </div>
-
     </div>
-
   </section>
 
-
-  <!-- FOOTER -->
   <footer>
-
     <p>
       <strong>Gentle Touch Cleaning</strong>
       • Clean Spaces. Gentle Touch.
@@ -958,9 +822,7 @@
     <p>
       © 2026 Gentle Touch Cleaning. All Rights Reserved.
     </p>
-
   </footer>
-
 
 </body>
 </html>
